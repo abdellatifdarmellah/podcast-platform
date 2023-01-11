@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="textPrompt" prefHeight="570.0" prefWidth="800.0" style="-fx-background-color: #F2E9E4;" stylesheets="@../../../style/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.podcastapp.SignUpController">
+   <children>
+      <Label id="welcomeLabel0" layoutX="124.0" layoutY="96.0" prefHeight="40.0" prefWidth="430.0" stylesheets="@../../../style/style.css" text="Welcome to Podcastio">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label id="welcomeLabel1" layoutX="184.0" layoutY="133.0" stylesheets="@../../../style/style.css" text="Create an account" />
+      <Label id="welcomeLabel2" layoutX="199.0" layoutY="173.0" stylesheets="@../../../style/style.css" text="Email" />
+      <Label id="welcomeLabel2" layoutX="199.0" layoutY="270.0" stylesheets="@../../../style/style.css" text="Username" />
+      <Label id="welcomeLabel2" layoutX="199.0" layoutY="367.0" stylesheets="@../../../style/style.css" text="Password" />
+      <TextField id="textField" fx:id="emailInput" focusTraversable="false" layoutX="190.0" layoutY="205.0" prefHeight="33.0" prefWidth="276.0" promptText="Enter your email" style="-fx-background-radius: 16;" stylesheets="@../../../style/style.css" />
+      <TextField id="textField" fx:id="usernameInput" focusTraversable="false" layoutX="190.0" layoutY="299.0" prefHeight="33.0" prefWidth="276.0" promptText="Enter your username" style="-fx-background-radius: 16;" stylesheets="@../../../style/style.css" />
+      <PasswordField id="textField" fx:id="passwordInput" focusTraversable="false" layoutX="190.0" layoutY="393.0" prefHeight="33.0" prefWidth="276.0" promptText="Enter your password" style="-fx-background-radius: 16;" stylesheets="@../../../style/style.css" />
+      <Button id="textButton" fx:id="SignUpButton" focusTraversable="false" layoutX="190.0" layoutY="463.0" mnemonicParsing="false" onMouseClicked="#CreateAnAccount" prefHeight="42.0" prefWidth="276.0" style="-fx-background-color: #FF7B00; -fx-background-radius: 16;" stylesheets="@../../../style/style.css" text="Create an account" textFill="WHITE" />
+      <Label id="textPrompt" layoutX="207.0" layoutY="512.0" prefHeight="20.0" prefWidth="200.0" stylesheets="@../../../style/style.css" text="Already have an account?" />
+      <Button id="textPrompt" fx:id="SignInButton" focusTraversable="false" layoutX="385.0" layoutY="507.0" mnemonicParsing="false" onMouseClicked="#SignIn" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: transparent;" stylesheets="@../../../style/style.css" text="Sign in" textFill="#ff7b00">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Label fx:id="successText" layoutX="202.0" layoutY="433.0" prefHeight="20.0" prefWidth="308.0" text="Account created successfully !" textFill="#044300" visible="false" />
+      <Label id="textPrompt" fx:id="errorText" layoutX="199.0" layoutY="433.0" prefHeight="20.0" prefWidth="267.0" stylesheets="@../../../style/style.css" text="Text Field cannot be empty !" textFill="RED" visible="false" />
+      <Label id="title" layoutX="37.0" layoutY="17.0" prefHeight="24.0" prefWidth="184.0" text="Podcastio" />
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="16.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../assets/icons8-podcast-60.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="appLogo" layoutX="16.0" layoutY="17.0" prefHeight="24.0" prefWidth="24.0" />
+   </children>
+</Pane>

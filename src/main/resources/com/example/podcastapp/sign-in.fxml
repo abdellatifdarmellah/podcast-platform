@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="570.0" prefWidth="800.0" style="-fx-background-color: #F2E9E4;" stylesheets="@../../../style/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.podcastapp.SignInController">
+    <children>
+        <Label id="welcomeLabel0" layoutX="142.0" layoutY="132.0" prefHeight="45.0" prefWidth="276.0" stylesheets="@../../../style/style.css" text="Welcome Back">
+            <font>
+                <Font name="Roboto" size="10.0" />
+            </font>
+        </Label>
+        <Label id="welcomeLabel1" layoutX="139.0" layoutY="169.0" prefHeight="35.0" prefWidth="380.0" stylesheets="@../../../style/style.css" text="Welcome back! Please enter your details." />
+        <Label id="welcomeLabel2" layoutX="199.0" layoutY="209.0" prefHeight="26.0" prefWidth="114.0" stylesheets="@../../../style/style.css" text="Username">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label id="textPrompt" fx:id="errorMsg" accessibleRole="IMAGE_VIEW" cache="true" layoutX="199.0" layoutY="374.0" prefHeight="20.0" prefWidth="303.0" stylesheets="@../../../style/style.css" text="username or password are wrong !" textFill="RED" visible="false" />
+        <TextField id="textField" fx:id="username" focusTraversable="false" layoutX="190.0" layoutY="241.0" prefHeight="33.0" prefWidth="276.0" promptText="Enter your username" style="-fx-background-radius: 16px;" stylesheets="@../../../style/style.css" />
+        <Label id="welcomeLabel2" layoutX="199.0" layoutY="306.0" prefHeight="23.0" prefWidth="97.0" stylesheets="@../../../style/style.css" text="Password" />
+        <PasswordField id="textField" fx:id="password" focusTraversable="false" layoutX="190.0" layoutY="335.0" prefHeight="33.0" prefWidth="276.0" promptText="Enter your password" style="-fx-background-radius: 16px;" stylesheets="@../../../style/style.css" />
+        <Label id="textPrompt" layoutX="211.0" layoutY="399.0" prefHeight="20.0" prefWidth="114.0" stylesheets="@../../../style/style.css" text="Remember me" />
+        <CheckBox fx:id="rememberMe" focusTraversable="false" layoutX="190.0" layoutY="400.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="0.0" />
+        <Button id="textPrompt" fx:id="forgotPassword" focusTraversable="false" layoutX="312.0" layoutY="394.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" stylesheets="@../../../style/style.css" text="Forgot password ?" textAlignment="RIGHT" textFill="#ff7b00" />
+        <Button id="textButton" fx:id="SignIn" focusTraversable="false" layoutX="190.0" layoutY="433.0" mnemonicParsing="false" onMouseClicked="#SignIn" prefHeight="42.0" prefWidth="276.0" style="-fx-background-color: #FF7B00; -fx-background-radius: 16px;" stylesheets="@../../../style/style.css" text="Sign in" textFill="WHITE" />
+        <Label id="textPrompt" layoutX="219.0" layoutY="476.0" prefHeight="30.0" prefWidth="205.0" stylesheets="@../../../style/style.css" text="Don't have an account?" />
+        <Button id="textPrompt" fx:id="SignUp" focusTraversable="false" layoutX="362.0" layoutY="475.0" mnemonicParsing="false" onMouseClicked="#SignUp" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: transparent;" stylesheets="@../../../style/style.css" text="Sign up" textFill="#ff7b00" />
+        <Label id="title" layoutX="32.0" layoutY="14.0" prefHeight="24.0" prefWidth="97.0" text="Podcastio" />
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../assets/icons8-podcast-60.png" />
+            </image>
+        </ImageView>
+      <Label fx:id="appLogo" layoutX="11.0" layoutY="14.0" prefHeight="24.0" prefWidth="24.0" />
+    </children>
+</Pane>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="570.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.podcastapp.HomeController">
+   <children>
+      <Pane fx:id="menuPanel" prefHeight="445.0" prefWidth="176.0" style="-fx-background-color: EDEDE9;">
+         <children>
+            <Button id="btnMenu" layoutX="17.0" layoutY="94.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="146.0" stylesheets="@../../../style/style.css" text="Home" textFill="#ff7b00">
+               <graphic>
+                  <Label fx:id="homeLabel" maxHeight="19.0" maxWidth="19.0" minHeight="19.0" minWidth="19.0" prefHeight="19.0" prefWidth="19.0">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+               </graphic>
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Button>
+            <Button id="btnMenu" layoutX="17.0" layoutY="146.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="146.0" style="-fx-alignment: center-left; -fx-background-color: transparent;" stylesheets="@../../../style/style.css" text="Categories">
+               <graphic>
+                  <Label fx:id="categoriesLabel" maxHeight="19.0" maxWidth="19.0" minHeight="19.0" minWidth="19.0" prefHeight="19.0" prefWidth="19.0">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+               </graphic>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Button>
+            <Button id="btnMenu" layoutX="17.0" layoutY="207.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="146.0" style="-fx-alignment: center-left; -fx-background-color: transparent;" stylesheets="@../../../style/style.css" text="Favorites">
+               <graphic>
+                  <Label fx:id="favoritesLabel" maxHeight="19.0" maxWidth="19.0" minHeight="19.0" minWidth="19.0" prefHeight="19.0" prefWidth="19.0">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+               </graphic>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Button>
+            <Button id="btnMenu" layoutX="17.0" layoutY="262.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="146.0" style="-fx-alignment: center-left; -fx-background-color: transparent;" stylesheets="@../../../style/style.css" text="Uploads">
+               <graphic>
+                  <Label fx:id="uploadsLabel" maxHeight="19.0" maxWidth="19.0" minHeight="19.0" minWidth="19.0" prefHeight="19.0" prefWidth="19.0">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+               </graphic>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="logOutButton" layoutX="17.0" layoutY="397.0" mnemonicParsing="false" onAction="#toSignInPage" prefHeight="27.0" prefWidth="146.0" style="-fx-background-color: transparent; -fx-alignment: center-left;" stylesheets="@../../../style/style.css" text="Log out">
+               <graphic>
+                  <Label fx:id="logOutLabel" maxHeight="19.0" maxWidth="19.0" minHeight="19.0" minWidth="19.0" prefHeight="19.0" prefWidth="19.0">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+               </graphic>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3d5ca" height="2.0" layoutX="17.0" layoutY="296.0" stroke="#e3d5ca" strokeLineCap="ROUND" strokeType="INSIDE" width="146.0" />
+            <Label fx:id="appLogo" layoutX="14.0" layoutY="14.0" prefHeight="24.0" prefWidth="24.0" />
+            <Label id="title" layoutX="38.0" layoutY="13.0" stylesheets="@../../../style/style.css" text="Podcastio">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutY="445.0" prefHeight="125.0" prefWidth="800.0" style="-fx-background-color: F2E9E4;">
+         <children>
+            <Button fx:id="PlayButton" layoutX="397.0" layoutY="44.0" maxHeight="32.0" maxWidth="32.0" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" onAction="#PlayMedia" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="PrevButton" layoutX="350.0" layoutY="48.0" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" mnemonicParsing="false" onAction="#PrevMedia" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="NextButton" layoutX="447.0" layoutY="48.0" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" mnemonicParsing="false" onAction="#NextMedia" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ReplayButton" layoutX="497.0" layoutY="51.0" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#ReplayMedia" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="shuffleButton" layoutX="300.0" layoutY="51.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#ShuffleMedia" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Slider id="volumeSlider" fx:id="volumeSlider" blockIncrement="1.0" layoutX="684.0" layoutY="55.0" prefHeight="0.0" prefWidth="90.0" stylesheets="@../../../style/style.css" value="50.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Slider>
+            <Label id="podcastTitle" fx:id="podcastTitle" layoutX="72.0" layoutY="38.0" prefHeight="27.0" prefWidth="186.0" stylesheets="@../../../style/style.css">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="casterName" fx:id="casterName" layoutX="72.0" layoutY="66.0" prefHeight="20.0" prefWidth="106.0" stylesheets="@../../../style/style.css">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentTime" layoutX="190.0" layoutY="92.0" text="0:00" />
+            <Label fx:id="endTime" layoutX="607.0" layoutY="92.0" text="03:00" />
+            <Slider id="volumeSlider" fx:id="progress" layoutX="227.0" layoutY="94.0" prefHeight="14.0" prefWidth="371.0" style="-fx-cursor: hand;" stylesheets="@../../../style/style.css" />
+            <Label fx:id="labelVolume" layoutX="656.0" layoutY="48.0" prefHeight="25.0" prefWidth="25.0" />
+            <Label fx:id="podcastImage" layoutX="14.0" layoutY="35.0" prefHeight="50.0" prefWidth="50.0" />
+         </children>
+      </Pane>
+      <Label id="title" layoutX="203.0" layoutY="18.0" stylesheets="@../../../style/style.css" text="Good evening" />
+      <Label id="title" layoutX="203.0" layoutY="60.0" stylesheets="@../../../style/style.css" text="Trending Podcasts" />
+      <TextField layoutX="355.0" layoutY="17.0" prefHeight="25.0" prefWidth="212.0" promptText="Search for podcasts, artists, ect ..." style="-fx-background-radius: 50;" />
+      <Label fx:id="searchLabel" layoutX="545.0" layoutY="21.0" prefHeight="17.0" prefWidth="14.0" style="-fx-opacity: 50%;" />
+      <Label id="title" layoutX="203.0" layoutY="269.0" stylesheets="@../../../style/style.css" text="Most popular" />
+      <Pane layoutX="575.0" layoutY="60.0" prefHeight="316.0" prefWidth="200.0" style="-fx-background-color: EDEDE9; -fx-background-radius: 32;">
+         <children>
+            <Label id="title" alignment="CENTER" layoutY="1.0" prefHeight="27.0" prefWidth="200.0" stylesheets="@../../../style/style.css" text="Top Podcasters" textAlignment="CENTER" />
+            <Button id="myBtn" fx:id="topOne" layoutX="10.0" layoutY="41.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;" stylesheets="@../../../style/style.css" />
+            <Label layoutX="55.0" layoutY="43.0" text="Gary Vaynerchuk">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="60.0" text="320.520 followers">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="topTwo" layoutX="14.0" layoutY="95.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;" />
+            <Label layoutX="59.0" layoutY="97.0" text="Andrew Tate">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="114.0" text="1.720.824 followers">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="topThree" layoutX="14.0" layoutY="147.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;" />
+            <Label layoutX="59.0" layoutY="149.0" text="Joe Rogan">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="166.0" text="230.110 followers">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="topFour" layoutX="14.0" layoutY="205.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;" />
+            <Label layoutX="59.0" layoutY="207.0" text="Piers Morgan">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="224.0" text="780.980 followers">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="topFive" layoutX="14.0" layoutY="258.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;" />
+            <Label layoutX="59.0" layoutY="260.0" text="Patrick Pet-David">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="277.0" text="490.730 followers">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Button fx:id="garyVeeButton" layoutX="220.0" layoutY="99.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" style="-fx-background-radius: 32; -fx-border-radius: 32; -fx-background-color: transparent;" />
+      <Button fx:id="RSMButton" layoutX="206.0" layoutY="299.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent; -fx-background-radius: 32; -fx-border-radius: 32;" />
+      <Label id="labels" fx:id="RSMTitle" layoutX="203.0" layoutY="376.0" prefHeight="40.0" prefWidth="106.0" stylesheets="@../../../style/style.css" />
+      <Label layoutX="203.0" layoutY="413.0" prefHeight="20.0" prefWidth="60.0" stylesheets="@../../../style/style.css" text="Andrew Tate">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="JBButton" layoutX="338.0" layoutY="299.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent; -fx-background-radius: 32; -fx-border-radius: 32;" />
+      <Label id="labels" layoutX="335.0" layoutY="376.0" prefHeight="20.0" prefWidth="106.0" stylesheets="@../../../style/style.css" text="Just Branding" />
+      <Label layoutX="335.0" layoutY="393.0" prefHeight="20.0" prefWidth="60.0" stylesheets="@../../../style/style.css" text="Jacob &amp; Matt">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="MIButton" layoutX="467.0" layoutY="299.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent; -fx-background-radius: 32; -fx-border-radius: 32;" />
+      <Label id="labels" layoutX="464.0" layoutY="376.0" prefHeight="20.0" prefWidth="176.0" stylesheets="@../../../style/style.css" text="Millenial Investing" />
+      <Label layoutX="464.0" layoutY="393.0" prefHeight="20.0" prefWidth="90.0" stylesheets="@../../../style/style.css" text="Robert Leonard">
+         <font>
+            <Font name="Tahoma" size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="NextArrowButton" layoutX="525.0" layoutY="162.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="PrevArrowButton" layoutX="176.0" layoutY="162.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: transparent;" />
+      <MenuButton fx:id="profileButton" layoutX="649.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#toSignInPage" text="Log out" />
+        </items>
+      </MenuButton>
+      <Label fx:id="profileLabel" layoutX="617.0" layoutY="10.0" prefHeight="32.0" prefWidth="32.0" />
+   </children>
+</Pane>

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+#welcomeLabel0 {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-weight: Bold;
+    -fx-font-size: 28px;
+    -fx-alignment: center;
+}
+#welcomeLabel1 {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+}
+
+#welcomeLabel2 {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 14px;
+}
+#textField {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+}
+#textPrompt {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 14px;
+}
+#textButton {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 14px;
+}
+#title {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-weight: Bold;
+    -fx-font-size: 18px;
+}
+#btnMenu {
+    -fx-background-color: #fff;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-alignment: center-left;
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-weight: Bold;
+    -fx-font-size: 14px;
+}
+
+#labels {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 12px;
+}
+#myBtn:hover {
+    -fx-background-color: #fff;
+
+}
+#volumeSlider .track{
+    -fx-pref-height: 1px;
+    -fx-background-color: #FF7B00;
+    -fx-background-radius: 5px;
+}
+
+#volumeSlider .thumb {
+    -fx-pref-height: 10px;
+    -fx-pref-width: 10px;
+    -fx-background-color: #FF7B00;
+    -fx-background-radius: 5px;
+}
+
+#casterName {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 10px;
+}
+#podcastTitle {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 12px;
+}
