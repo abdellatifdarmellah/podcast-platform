@@ -1,0 +1,5 @@
+#readme file for my podcast app it's a podcast platform like spotify. I used intelliJ as my coding space I made it using JAVAFX and SceneBuilder, and I created the UI with Figma. I spent in total making it 20h.
+
+When you launch this app for the first time, you will go to the log in page where you can type your account informations, if you don't have an account; you can click on the sign up button to create a new account - all the infos are saved in a txt file after log in successfully, you are now in the home page; to the left you have the dashboard, in the center you have the actuals podcasts, to the right you have the top casters, and in the bottom you have play/pause, next, previous, replay, shufle volume slider and volume icon, mp3 slider, title, caster name, podcast image
+
+the app isn't completed since I didn't have time to finish it because it's for university but it has all the functionalities needed
